@@ -1,0 +1,9 @@
+var fs = require('fs');
+
+var buf = fs.readFileSync(process.argv[2]);
+
+var string = buf.toString();
+
+var number = string.split("\n").length - 1;
+
+console.log(number);
